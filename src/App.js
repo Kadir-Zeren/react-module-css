@@ -5,8 +5,11 @@ function App() {
   console.log(data);
   return (
     <>
-      <h1>APP</h1>
-      <Card />
+      <h1>LANGUAGES</h1>
+
+      {data.map(({ id, language, img, btnName }) => (
+        <Card key={id} lang={language} img={img} btn={btnName} />
+      ))}
     </>
   );
 }

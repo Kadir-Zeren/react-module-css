@@ -1,9 +1,11 @@
-import "./Buton.css"
+import "./Buton.css";
 
-const Buton = () => {
+const Buton = ({ btn }) => {
   return (
-    <div>Buton</div>
-  )
-}
+    <div>
+      <button>{btn}</button>
+    </div>
+  );
+};
 
-export default Buton
+export default Buton;
